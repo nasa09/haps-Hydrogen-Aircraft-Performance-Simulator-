@@ -1,8 +1,8 @@
 # HAPS — Hydrogen Aircraft Performance Simulator
 
-HAPS is a Python simulation that compares liquid hydrogen (LH2) and conventional Jet-A fuel on the same mid-range commercial aircraft during steady, level cruise flight. Using standard aircraft performance equations, it steps through the flight one second at a time, updating aircraft weight, required thrust, fuel burned, and distance traveled — while keeping every other flight condition identical between the two fuels, so any difference in the results comes from the fuel properties themselves.
+HAPS is a Python simulation that compares liquid hydrogen (LH2) and conventional Jet-A fuel on the same mid-range commercial aircraft during steady, level cruise flight. Using standard aircraft performance equations, it steps through the flight one second at a time, updating aircraft weight, required thrust, fuel burned, and distance traveled, while keeping every other flight condition identical between the two fuels, so any difference in the results comes from the fuel properties themselves.
 
-**Full research write-up:** [link to your PDF/paper here]
+**Full research write-up:** [https://drive.google.com/file/d/1iAIO0hnbRmY7Vz6_UeL0N7BuGFp-ycnu/view?usp=sharing]
 
 ## Why this exists
 
@@ -44,7 +44,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-That's it — no configuration needed. It runs both fuels on a 4,000 km mission and prints a summary for each, then saves five comparison figures to `outputs/`.
+No configuration needed. It runs both fuels on a 4,000 km mission and prints a summary for each, then saves five comparison figures to `outputs/`.
 
 ## Sample output
 
@@ -74,31 +74,9 @@ Average Mass Flow Rate :            0.2030 kg/s
 ==================================================
 ```
 
-### Figures
-
-**Total aircraft mass vs. distance**
-
-![Total mass](outputs/figure1.png)
-
-**Remaining fuel mass vs. distance**
-
-![Fuel mass](outputs/figure2.png)
-
-**Required fuel storage volume vs. distance**
-
-![Fuel volume](outputs/figure3.png)
-
-**Required cruise thrust vs. distance**
-
-![Thrust](outputs/figure4.png)
-
-**Fuel flow rate vs. distance**
-
-![Fuel flow](outputs/figure5.png)
-
 ## Key takeaway
 
-Even though the hydrogen aircraft takes off about 7,750 kg lighter (thanks to hydrogen's much higher specific energy), it needs roughly four times more tank volume than the Jet-A aircraft — the central engineering trade-off this project set out to measure.
+Even though the hydrogen aircraft takes off about 7,750 kg lighter (thanks to hydrogen's much higher specific energy), it needs roughly four times more tank volume than the Jet-A aircraft, this project attempts to measure that.
 
 ## Model assumptions & limitations
 
@@ -109,7 +87,3 @@ Even though the hydrogen aircraft takes off about 7,750 kg lighter (thanks to hy
 - Hydrogen boil-off and detailed combustion chemistry are not modeled
 
 See the full paper (linked above) for input sources, the underlying equations, and a full discussion.
-
-## License
-
-MIT
